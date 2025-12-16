@@ -1,6 +1,7 @@
 # Differential Expression Analysis (EMBL Data)
 
 Analysis of differential gene expression using public data from the EMBL database. The project focuses on comparing **Control vs. Treated** samples to identify significant changes in gene expression.
+This project analyzes differential gene expression in Renal Cell Carcinoma (RCC), using data from the E-PROT-59 study. Red points indicate significant up-regulation, while blue points represent down-regulation.
 
 ## Project Overview
 I developed a custom pipeline in Python to process raw TSV data, filter for statistical significance, and visualize the results. The goal was to build reusable functions for differential analysis.

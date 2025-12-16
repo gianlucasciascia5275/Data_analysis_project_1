@@ -1,28 +1,32 @@
-# Differential Gene Expression Analysis (EMBL Data)
+# Differential Expression Analysis (EMBL Data)
 
-## 📌 Project Overview
-This project performs a differential expression analysis comparing **Control vs. Treated** samples. The dataset was obtained from the **EMBL (European Molecular Biology Laboratory)** database.
+Analysis of differential gene expression using public data from the EMBL database. The project focuses on comparing **Control vs. Treated** samples to identify significant changes in gene expression.
 
-The goal of this analysis is to identify significantly differentially expressed genes (DEGs) and visualize the results using custom Python functions.
+## Project Overview
+I developed a custom pipeline in Python to process raw TSV data, filter for statistical significance, and visualize the results. The goal was to build reusable functions for differential analysis.
 
-## 🛠️ Tech Stack
-* **Language:** Python
-* **Data Manipulation:** Pandas, NumPy
-* **Data Visualization:** Matplotlib, Seaborn
-* **Input Data:** TSV format (Tab-Separated Values)
-
-## 📊 Key Features
-* **Data Preprocessing:** Loading and cleaning raw TSV data from EMBL.
-* **Custom Analysis Functions:** Python functions created to automate the statistical filtering and processing.
+**Key features:**
+* **Data Processing:** Parsing and cleaning TSV files using Pandas.
+* **Statistical Analysis:** Filtering genes based on Fold Change and P-value.
 * **Visualization:**
-    * **Volcano Plot:** To visualize the relationship between Fold Change and Statistical Significance (P-value).
-    * **Heatmap:** To display expression patterns across samples.
+    * **Volcano Plots:** To visualize significant Up/Down-regulated genes.
+    * **Heatmaps:** To inspect expression clusters across different samples.
 
-## 📂 Project Structure
-```text
-├── Data/               # Raw data files (TSV from EMBL)
-├── notebooks/          # Jupyter Notebooks with analysis (e.g., Analysis.ipynb)
-├── results/            # Output images and processed files
-├── scripts/            # Python scripts (.py) containing custom functions
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
+## Tools Used
+* **Python**
+* **Pandas & NumPy** (Data manipulation)
+* **Matplotlib & Seaborn** (Data visualization)
+
+## Repository Structure
+* `Data/`: Contains the raw dataset (TSV format).
+* `notebooks/`: Jupyter notebooks with the step-by-step analysis.
+* `results/`: Output images and exported tables.
+* `scripts/`: Python scripts containing the custom functions used in the notebooks.
+
+## How to run
+1.  Clone the repository.
+2.  Install the requirements:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Open the notebooks in the `notebooks/` folder to explore the analysis.
